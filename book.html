@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Online - Simply-Sport</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #002f6c; /* Dark Blue */
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #FFD700; /* Gold Border */
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border: 2px solid transparent;
+      transition: all 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #FFD700; /* Gold Text */
+      border: 2px solid #FFD700; /* Gold Border */
+      background-color: #002f6c;
+      border-radius: 5px;
+    }
+
+    .booking-container {
+      padding: 2rem;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .booking-container h1 {
+      color: #002f6c; /* Dark Blue */
+      margin-bottom: 1rem;
+    }
+
+    .booking-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 2rem;
+      border: 2px solid #FFD700; /* Gold Border */
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .booking-form label {
+      display: block;
+      text-align: left;
+      margin-bottom: 0.5rem;
+      color: #002f6c; /* Dark Blue */
+      font-weight: bold;
+    }
+
+    .booking-form input, .booking-form select, .booking-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .booking-form button {
+      background-color: #FFD700; /* Gold Button */
+      color: #002f6c; /* Dark Blue Text */
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .booking-form button:hover {
+      background-color: #d4af37; /* Darker Gold */
+    }
+
+    footer {
+      background-color: #002f6c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Simply-Sport</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plans.html">Plans & Pricing</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="book.html">Book Online</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="booking-container">
+      <h1>Book Your Appointment</h1>
+      <p>Schedule your appointment quickly and easily using the form below.</p>
+      <form class="booking-form" action="submit_booking.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="">-- Select a Service --</option>
+          <option value="personal_training">Personal Training</option>
+          <option value="group_training">Group Training</option>
+          <option value="nutrition_consultation">Nutrition Consultation</option>
+        </select>
+
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Add any additional details..."></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Simply-Sport. All rights reserved.</p>
+  </footer>
+</body>
+</html>

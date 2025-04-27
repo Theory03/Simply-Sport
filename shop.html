@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Simply-Sport</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #002f6c; /* Dark Blue */
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #FFD700; /* Gold Border */
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border: 2px solid transparent;
+      transition: all 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #FFD700; /* Gold Text */
+      border: 2px solid #FFD700; /* Gold Border */
+      background-color: #002f6c;
+      border-radius: 5px;
+    }
+
+    .shop-container {
+      padding: 2rem;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    .shop-container h1 {
+      color: #002f6c; /* Dark Blue */
+      margin-bottom: 1.5rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 2px solid #FFD700; /* Gold Border */
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .product-card h2 {
+      font-size: 1.2rem;
+      color: #002f6c; /* Dark Blue */
+      margin-bottom: 0.5rem;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .product-card button {
+      background-color: #FFD700; /* Gold Button */
+      color: #002f6c; /* Dark Blue Text */
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .product-card button:hover {
+      background-color: #d4af37; /* Darker Gold */
+    }
+
+    footer {
+      background-color: #002f6c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Simply-Sport</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plans.html">Plans & Pricing</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="book.html">Book Online</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="shop-container">
+      <h1>Shop Our Products</h1>
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="images/product1.png" alt="Product 1">
+          <h2>Product 1</h2>
+          <p>$29.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="images/product2.png" alt="Product 2">
+          <h2>Product 2</h2>
+          <p>$39.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="images/product3.png" alt="Product 3">
+          <h2>Product 3</h2>
+          <p>$49.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Simply-Sport. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to the JavaScript file -->
+  <script src="shop.js"></script>
+</body>
+</html>
